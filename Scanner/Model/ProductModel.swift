@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct Product {
+struct Product: Identifiable {
+    let id = UUID()
     let name: String
     let price: String
+    let barCode: String
+    
+    static func getProducts() -> [Product] {
+        [
+            Product(name: "Pure 0.18", price: "90", barCode: "213231123"),
+            Product(name: "Classic 0.35", price: "90", barCode: "123786123")
+        ]
+    }
 }

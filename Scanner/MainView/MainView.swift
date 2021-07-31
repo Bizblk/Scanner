@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct MainView: View {
-        
+    
     var body: some View {
         
         NavigationView {
+            
             VStack {
                 HStack {
                     Spacer()
-                        UpdateButtonView()
-                }.padding()
-
+                    UpdateButtonView()
+                        .padding()
+                }
                 Image("barcode")
                     .resizable()
-                    .frame(width: 350, height: 300)
+                    .frame(width: 350, height: 200)
                 NavigationLink(destination: ScanningView()) {
-                    Text("SCAN")
+                    ScanningButtonView()
                 }
-                ButtonView(width: 200, height: 50, color: .green, buttonName: "Scan")
-
-                Spacer()
+                
+                
+                ScanningListView()
+                
                 Text("0 product in base")
+                
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
-        
-        
-
+    
+    
+    
 }
 
 struct MainView_Previews: PreviewProvider {

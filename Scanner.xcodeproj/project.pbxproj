@@ -23,6 +23,7 @@
 		14D36AC326B54D2D00779EAA /* ScanningListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D36AC226B54D2D00779EAA /* ScanningListView.swift */; };
 		14D36AC526B5532900779EAA /* ScanningListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D36AC426B5532900779EAA /* ScanningListCellView.swift */; };
 		14D36AC726B566F700779EAA /* ScanningButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D36AC626B566F700779EAA /* ScanningButtonView.swift */; };
+		14D36AC926B7153300779EAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D36AC826B7153300779EAA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		14D36AC226B54D2D00779EAA /* ScanningListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningListView.swift; sourceTree = "<group>"; };
 		14D36AC426B5532900779EAA /* ScanningListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningListCellView.swift; sourceTree = "<group>"; };
 		14D36AC626B566F700779EAA /* ScanningButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningButtonView.swift; sourceTree = "<group>"; };
+		14D36AC826B7153300779EAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				14626F3126B3D73D00EBB0C6 /* DataManager.swift */,
 				14626F3426B3D7F300EBB0C6 /* ScannerManager.swift */,
+				14D36AC826B7153300779EAA /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				14D36AC726B566F700779EAA /* ScanningButtonView.swift in Sources */,
 				14D36AC126B49A4900779EAA /* ScanningView.swift in Sources */,
 				14D36ABA26B4876200779EAA /* Alert.swift in Sources */,
+				14D36AC926B7153300779EAA /* NetworkManager.swift in Sources */,
 				14626F2C26B330DC00EBB0C6 /* UpdateButtonView.swift in Sources */,
 				14D36AC326B54D2D00779EAA /* ScanningListView.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ final class BarcodeScannerViewModel: ObservableObject {
     
     @Published var scannedCode = ""
     @Published var alertItem: AlertItem?
-    
+    @Published var codes = DataManager.shared.scannedCode
     var statusText: String {
         scannedCode.isEmpty ? "Not Yet Scanned" : scannedCode
     }

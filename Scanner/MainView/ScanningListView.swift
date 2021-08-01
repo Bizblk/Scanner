@@ -12,7 +12,6 @@ struct ScanningListView: View {
     let scannerData = Product.getProducts()
     
     var body: some View {
-        VStack {
             List(scannerData) { product in
                 VStack {
                     ScanningListCellView(product: product)
@@ -20,7 +19,7 @@ struct ScanningListView: View {
                 }
                 
             }
-        }
+        
     }
 }
 

@@ -11,7 +11,6 @@ struct ScanningView: View {
     
     @StateObject var viewModel = BarcodeScannerViewModel()
     
-    
     var body: some View {
         
         NavigationView {
@@ -30,6 +29,14 @@ struct ScanningView: View {
                     .font(.largeTitle)
                     .foregroundColor(viewModel.statusTextColor)
                     .padding()
+                
+                Button(action: {DataManager.shared.addCode(barCode: viewModel.statusText)}, label: {
+                    Text(.init(systemName: "icloud.and.arrow.down.fill"))
+                        .font(.system(size: 30))
+                        .foregroundColor(.blue)
+                        .frame(width: 40, height: 40)
+                    
+                })
                 
             }
             .navigationTitle("Barcode Scanner")

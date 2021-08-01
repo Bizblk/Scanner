@@ -20,3 +20,8 @@ struct Product: Identifiable {
         ]
     }
 }
+
+struct ScanningCode: Identifiable {
+    let id = UUID()
+    let barCode: String
+}

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     
+    @StateObject var viewModel = BarcodeScannerViewModel()
+
+    
     var body: some View {
         
         NavigationView {
@@ -28,6 +31,13 @@ struct MainView: View {
                 
                 
                 ScanningListView()
+                
+                List(viewModel.codes, id:\ .self) { barCode in
+                    VStack {
+                        Text(barCode)
+                    }
+                    
+                }
                 
                 Text("0 product in base")
                 
